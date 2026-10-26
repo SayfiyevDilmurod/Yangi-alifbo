@@ -18,8 +18,18 @@
   body { margin:0; background:var(--bg); color:var(--ink);
     font:17px/1.55 "Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif; }
 
-  .flag { height:8px; background:linear-gradient(to bottom,
-    #0099b5 0 2.5px, var(--red) 2.5px 3px, #fff 3px 5px, var(--red) 5px 5.5px, #1eb53a 5.5px 8px); }
+  .flag {
+    height: 16px;
+    width: 64px;
+    background: linear-gradient(
+        to bottom,
+        #0099b5 0 5px,
+        var(--red) 5px 6px,
+        #fff 6px 10px,
+        var(--red) 10px 11px,
+        #1eb53a 11px 16px
+    );
+}
 
   header { background-color:var(--navy); color:#fff; padding:34px 20px 74px;
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.07' stroke-width='1.2'%3E%3Cpath d='M36 6l8 14 16-4-4 16 14 8-14 8 4 16-16-4-8 14-8-14-16 4 4-16-14-8 14-8-4-16 16 4z'/%3E%3C/g%3E%3C/svg%3E"); }
